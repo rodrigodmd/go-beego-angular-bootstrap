@@ -2,7 +2,6 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.1.2.
 
-
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
@@ -34,22 +33,51 @@ Creating the project using the angular-cli
     ng new webapp --routing --style=scss
 
 Modify the outputPath to generate the builds in the static folder. In the 'angular.json' change:
+````json
+"outputPath": "dist/webapp",
 
-    "outputPath": "dist/webapp",
+           to 
 
-               to 
-
-    "outputPath": "../server/static",
-Modify the build to include the `base-href` to `/app`. In the `package.json` change:
-
-    "build": "ng build",
+"outputPath": "../server/static",
+````
     
-            to
-            
-    "build": "ng build --base-href /app/ --prod",
+
+Modify the build to include the `base-href` to `/app`. In the `package.json` change:
+````json
+"build": "ng build",
+
+        to
+        
+"build": "ng build --base-href /app/ --prod",
+````
 
 Lets do a quick test to see if it works:
 
     yarn install
     yarn build  
+
+
+Adding bootstrap
+
+    npm install --save bootstrap
+    npm install --save @ng-bootstrap/ng-bootstrap
+
+Add styles in `src/styles.scss`:
+`````typescript
+@import '~bootstrap/scss/bootstrap.scss';
+`````
+
+Generating basic components:
+
+    # Layout
+    ng generate component layout/navbar
+    ng generate component layout/content
+    
+    # Examples
+    ng generate component main/exampleList
+    ng generate component main/exampleForm
+    
+    # Auth
+    ng generate component main/auth/login
+    ng generate component main/auth/register
 
