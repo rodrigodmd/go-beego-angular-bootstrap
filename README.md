@@ -4,4 +4,6 @@ This is an example app of using golang, beego framework, angular js and bootstra
 
 
 
-* Steps followed to create the [beego server](server/README.md)
+Steps followed to create:
+* the [Beego server](server/README.md)
+* the [Angular app](webapp/README.md)

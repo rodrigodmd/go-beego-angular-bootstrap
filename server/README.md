@@ -42,8 +42,8 @@ beego.Router("/", &controllers.MainController{})
 beego.SetStaticPath("/app", "static")
 ````  
  
- Create the static folder:
- 
+Create the static folder:
+     
     mkdir static
     
  
