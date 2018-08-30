@@ -14,11 +14,12 @@ import (
 )
 
 func init() {
-
+	// Services for the static content of the webapp
 	beego.BConfig.WebConfig.DirectoryIndex = true
 	beego.Router("/", &controllers.MainController{})
 	beego.SetStaticPath("/app", "static")
 
+	// Here we need to include an manage all the services that will consume the web app
 	ns := beego.NewNamespace("/v1",
 		beego.NSNamespace("/object",
 			beego.NSInclude(
