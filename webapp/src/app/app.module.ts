@@ -12,6 +12,9 @@ import {ExampleFormComponent} from './main/example-form/example-form.component';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { HelpComponent } from './main/help/help.component';
 import { MainComponent } from './main/main.component';
+import { FooterComponent } from './base/layout/footer/footer.component';
+
+
 
 @NgModule({
   declarations: [
@@ -23,7 +26,8 @@ import { MainComponent } from './main/main.component';
     ExampleListComponent,
     ExampleFormComponent,
     HelpComponent,
-    MainComponent
+    MainComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

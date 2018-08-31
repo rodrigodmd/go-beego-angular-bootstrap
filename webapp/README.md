@@ -62,6 +62,12 @@ Adding bootstrap
     npm install --save bootstrap
     npm install --save @ng-bootstrap/ng-bootstrap
 
+Add octicons (NOT DONE IN EXXAMPLE YET)
+https://stackoverflow.com/questions/41378939/how-to-use-octicon-with-angular-2
+
+    npm install --save octicons    
+    
+
 Add styles in `src/styles.scss`:
 `````typescript
 @import '~bootstrap/scss/bootstrap.scss';

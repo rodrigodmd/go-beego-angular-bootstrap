@@ -4,9 +4,10 @@ import {ExampleFormComponent} from "./main/example-form/example-form.component";
 import {ExampleListComponent} from "./main/example-list/example-list.component";
 import {HelpComponent} from "./main/help/help.component";
 import {MainComponent} from "./main/main.component";
+import {LoginComponent} from "./base/auth/login/login.component";
 
 const routes: Routes = [
-  {path: 'login', component: ExampleListComponent},
+  {path: 'login', component: LoginComponent},
   {
     path: 'main', component: MainComponent, children: [
       {path: 'form', component: ExampleFormComponent},
